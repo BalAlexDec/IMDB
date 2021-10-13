@@ -8,10 +8,11 @@ class Imdb{
         this.movie = movie;
     }
 
-   public  escribirEnFicheroJson(nombreFichero:string){
-        let rawdata = fs.readFileSync(nombreFichero+".json");
+   public  escribirEnFicheroJson(nombreFichero:string):void{
+        let rawdata = fs.readFileSync("imdbBBDD2.json");
         let data =  JSON.parse(rawdata);
-        //let data = JSON.stringify(imdb,null,2);
+        data = JSON.stringify(data,null,2);
+        
         fs.writeFile(nombreFichero+".json", data, (err) => {
             if (err) throw err;
             console.log('Los datos se encrito en el archivo');
@@ -19,7 +20,10 @@ class Imdb{
     }
 
     public obtenerIntanciaIMDB(nombreFichero:string){
+        let rawdata = fs.readFileSync("imdbBBDD2"+".json");
+        let data =  JSON.parse(rawdata);
 
+        return data;
     }
 
 }
