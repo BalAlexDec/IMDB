@@ -9,11 +9,10 @@ class Imdb{
     }
 
    public  escribirEnFicheroJson(nombreFichero:string):void{
-        let rawdata = fs.readFileSync("imdbBBDD2.json");
-        let data =  JSON.parse(rawdata);
-        data = JSON.stringify(data,null,2);
+        let rawdata = this.movie;
+        let data = JSON.stringify(rawdata,null,2);
         
-        fs.writeFile(nombreFichero+".json", data, (err) => {
+        fs.writeFileSync(nombreFichero+".json", data, (err) => {
             if (err) throw err;
             console.log('Los datos se encrito en el archivo');
         });
