@@ -19,7 +19,6 @@ class Imdb{
     }
 
     public obtenerIntanciaIMDB(nombreFichero:string){
-        let x = new Movie("x",11,"x");
         let rawdata = fs.readFileSync(nombreFichero+".json");
         let data =  JSON.parse(rawdata);
         let imb = new Imdb(data);

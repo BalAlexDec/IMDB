@@ -6,9 +6,9 @@ var prompt = require('prompt-sync')();
 const fs = require('fs');
 let pelicula = [];
 
-let cent = new Movie("5Centimentros",2021,"Asiatica");
-let Conbat = new Movie("Conbat",2021,"Americana");
-let whatif = new Movie("whatif",2021,"Americana");
+let cent = new Movie("5Centimentros",2021,"Asiatica","");
+let Conbat = new Movie("Conbat",2021,"Americana"," ");
+let whatif = new Movie("whatif",2021,"Americana"," ");
 
 let array = [cent,Conbat,whatif];
 let f = new Imdb(array);
@@ -16,8 +16,9 @@ let f = new Imdb(array);
 var n = prompt('Como se llama la Pelicula? ');
 var n2 = prompt('En que año se hizo la Pelicula?');
 var n3 = prompt('En que pais se hizo la Pelicula?');
+var n4 = prompt('En que pais se hizo la Pelicula?');
 
-let nuevapelicula = new Movie(n,n2,n3);
+let nuevapelicula = new Movie(n,n2,n3,n4);
 let obj:Imdb;
 //console.log("1. "+nuevapelicula.printallMovie());
  obj = f.obtenerIntanciaIMDB("ssss");
