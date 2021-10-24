@@ -27,6 +27,6 @@ export class Professional{
         this.profession = profession;
     }
     printAll(){
-        console.log("Nombre  " + this.name + " "+"age  "+ this.age +" "+"genre  "+ this.genre +" "+"weight  "+ this.weight +" "+"height  "+ this.height +" "+"hairColor  "+ this.hairColor +" "+"eyeColor  "+ this.eyeColor +" "+"race  "+ this.race +" "+"isRetired  "+ this.isRetired +" "+"nationality  "+ this.nationality +" "+"nationality  "+ this.nationality +" "+"oscarNumber  "+ this.oscarsNumber +" "+"professional  "+ this.profession +" ");
+        console.log("Nombre: " + this.name + + "Age: "+ this.age + "Genre: " + this.genre + "Weight: " + this.weight + "Height: " + this.height + "Hair color: " + this.hairColor +" "+"eyeColor  "+ this.eyeColor +" "+"race  "+ this.race +" "+"isRetired  "+ this.isRetired +" "+"nationality  "+ this.nationality +" "+"oscarNumber  "+ this.oscarsNumber +" "+"professional  "+ this.profession +" ");
     }
 }
